@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Love_Alert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s9v-M7-8gK">
+                                <rect key="frame" x="0.0" y="212" width="414" height="472"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3C-Kz-akr">
+                                <rect key="frame" x="0.0" y="95" width="414" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="NGl-RM-7fb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XlG-YL-Dtr">
+                                <rect key="frame" x="143" y="703" width="128" height="122"/>
+                                <state key="normal" image="heart_button">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="heart_clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJ1-T1-NTs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XlG-YL-Dtr" firstAttribute="top" secondItem="s9v-M7-8gK" secondAttribute="bottom" constant="19" id="2xI-MH-vYy"/>
+                            <constraint firstItem="s9v-M7-8gK" firstAttribute="top" secondItem="C3C-Kz-akr" secondAttribute="bottom" constant="64" id="Bwq-Qf-l7Q"/>
+                            <constraint firstItem="C3C-Kz-akr" firstAttribute="leading" secondItem="s9v-M7-8gK" secondAttribute="leading" id="Cav-AK-Srd"/>
+                            <constraint firstItem="s9v-M7-8gK" firstAttribute="centerX" secondItem="XlG-YL-Dtr" secondAttribute="centerX" id="GbH-m2-9Ks"/>
+                            <constraint firstItem="C3C-Kz-akr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="Lcs-gW-evh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XlG-YL-Dtr" secondAttribute="bottom" constant="37" id="OK1-eJ-PbX"/>
+                            <constraint firstItem="C3C-Kz-akr" firstAttribute="trailing" secondItem="s9v-M7-8gK" secondAttribute="trailing" id="d1h-ZQ-H06"/>
+                            <constraint firstItem="XlG-YL-Dtr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="kOj-w3-ryj"/>
+                            <constraint firstItem="C3C-Kz-akr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lfA-fv-0yO"/>
+                            <constraint firstItem="C3C-Kz-akr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uAq-6R-fSW"/>
+                            <constraint firstItem="s9v-M7-8gK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vbm-Mc-558"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="s9v-M7-8gK" id="Lb2-UG-EdM"/>
+                        <outlet property="top_text" destination="C3C-Kz-akr" id="jrU-qM-KyW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart_button" width="900" height="900"/>
+    </resources>
+</document>
