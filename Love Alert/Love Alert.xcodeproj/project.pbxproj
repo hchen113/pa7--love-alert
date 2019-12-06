@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60C2A5E430822D85D1810BDC /* Pods_Love_Alert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7AD346C3B71876DBE0BD7A /* Pods_Love_Alert.framework */; };
 		BA6DD401239B124600078BB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6DD400239B124600078BB3 /* AppDelegate.swift */; };
 		BA6DD403239B124600078BB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6DD402239B124600078BB3 /* SceneDelegate.swift */; };
 		BA6DD405239B124600078BB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6DD404239B124600078BB3 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 		BA6DD410239B124800078BB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6DD40E239B124800078BB3 /* LaunchScreen.storyboard */; };
 		BA6DD41B239B124800078BB3 /* Love_AlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6DD41A239B124800078BB3 /* Love_AlertTests.swift */; };
 		BA6DD426239B124800078BB3 /* Love_AlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6DD425239B124800078BB3 /* Love_AlertUITests.swift */; };
+		BA6DD434239B172400078BB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA6DD433239B172400078BB3 /* GoogleService-Info.plist */; };
+		CFEB614DA96F6C8079B803F1 /* Pods_Love_AlertTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCDC4F82AF82297BEEDEBA1 /* Pods_Love_AlertTests.framework */; };
+		DE13FA61FE10BB08CF74325A /* Pods_Love_Alert_Love_AlertUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C3C06C500C5FCDDC7CC7AF /* Pods_Love_Alert_Love_AlertUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33EB69B565C2801F67357984 /* Pods-Love AlertTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Love AlertTests.release.xcconfig"; path = "Target Support Files/Pods-Love AlertTests/Pods-Love AlertTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D9A781673388D3FAE1AB3D9 /* Pods-Love Alert-Love AlertUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Love Alert-Love AlertUITests.debug.xcconfig"; path = "Target Support Files/Pods-Love Alert-Love AlertUITests/Pods-Love Alert-Love AlertUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E7AD346C3B71876DBE0BD7A /* Pods_Love_Alert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Love_Alert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCDC4F82AF82297BEEDEBA1 /* Pods_Love_AlertTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Love_AlertTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3192C3A24536B6E3C2A29A /* Pods-Love Alert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Love Alert.release.xcconfig"; path = "Target Support Files/Pods-Love Alert/Pods-Love Alert.release.xcconfig"; sourceTree = "<group>"; };
+		AF127BCDD285517B1248395F /* Pods-Love AlertTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Love AlertTests.debug.xcconfig"; path = "Target Support Files/Pods-Love AlertTests/Pods-Love AlertTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B163A056B8E468A233069335 /* Pods-Love Alert-Love AlertUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Love Alert-Love AlertUITests.release.xcconfig"; path = "Target Support Files/Pods-Love Alert-Love AlertUITests/Pods-Love Alert-Love AlertUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA6DD3FD239B124600078BB3 /* Love Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Love Alert.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6DD400239B124600078BB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA6DD402239B124600078BB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +62,9 @@
 		BA6DD421239B124800078BB3 /* Love AlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Love AlertUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6DD425239B124800078BB3 /* Love_AlertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Love_AlertUITests.swift; sourceTree = "<group>"; };
 		BA6DD427239B124800078BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6DD433239B172400078BB3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC0BCC07D9ABE27ED0B9AFBE /* Pods-Love Alert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Love Alert.debug.xcconfig"; path = "Target Support Files/Pods-Love Alert/Pods-Love Alert.debug.xcconfig"; sourceTree = "<group>"; };
+		F8C3C06C500C5FCDDC7CC7AF /* Pods_Love_Alert_Love_AlertUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Love_Alert_Love_AlertUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C2A5E430822D85D1810BDC /* Pods_Love_Alert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFEB614DA96F6C8079B803F1 /* Pods_Love_AlertTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE13FA61FE10BB08CF74325A /* Pods_Love_Alert_Love_AlertUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C190FFFEBF471B0A3217059 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BCC07D9ABE27ED0B9AFBE /* Pods-Love Alert.debug.xcconfig */,
+				AA3192C3A24536B6E3C2A29A /* Pods-Love Alert.release.xcconfig */,
+				4D9A781673388D3FAE1AB3D9 /* Pods-Love Alert-Love AlertUITests.debug.xcconfig */,
+				B163A056B8E468A233069335 /* Pods-Love Alert-Love AlertUITests.release.xcconfig */,
+				AF127BCDD285517B1248395F /* Pods-Love AlertTests.debug.xcconfig */,
+				33EB69B565C2801F67357984 /* Pods-Love AlertTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		659AC33F70ED9148E88EEECC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E7AD346C3B71876DBE0BD7A /* Pods_Love_Alert.framework */,
+				F8C3C06C500C5FCDDC7CC7AF /* Pods_Love_Alert_Love_AlertUITests.framework */,
+				9FCDC4F82AF82297BEEDEBA1 /* Pods_Love_AlertTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA6DD3F4239B124600078BB3 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +125,8 @@
 				BA6DD419239B124800078BB3 /* Love AlertTests */,
 				BA6DD424239B124800078BB3 /* Love AlertUITests */,
 				BA6DD3FE239B124600078BB3 /* Products */,
+				5C190FFFEBF471B0A3217059 /* Pods */,
+				659AC33F70ED9148E88EEECC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +150,7 @@
 				BA6DD40C239B124800078BB3 /* Assets.xcassets */,
 				BA6DD40E239B124800078BB3 /* LaunchScreen.storyboard */,
 				BA6DD411239B124800078BB3 /* Info.plist */,
+				BA6DD433239B172400078BB3 /* GoogleService-Info.plist */,
 				BA6DD409239B124600078BB3 /* Love_Alert.xcdatamodeld */,
 			);
 			path = "Love Alert";
@@ -138,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA6DD42A239B124800078BB3 /* Build configuration list for PBXNativeTarget "Love Alert" */;
 			buildPhases = (
+				764B74B505A7C6983DA05FC8 /* [CP] Check Pods Manifest.lock */,
 				BA6DD3F9239B124600078BB3 /* Sources */,
 				BA6DD3FA239B124600078BB3 /* Frameworks */,
 				BA6DD3FB239B124600078BB3 /* Resources */,
+				5643C1300AF0CF7BE51F31B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA6DD42D239B124800078BB3 /* Build configuration list for PBXNativeTarget "Love AlertTests" */;
 			buildPhases = (
+				5433EA9FDD907DE09252B022 /* [CP] Check Pods Manifest.lock */,
 				BA6DD412239B124800078BB3 /* Sources */,
 				BA6DD413239B124800078BB3 /* Frameworks */,
 				BA6DD414239B124800078BB3 /* Resources */,
@@ -173,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA6DD430239B124800078BB3 /* Build configuration list for PBXNativeTarget "Love AlertUITests" */;
 			buildPhases = (
+				AFB911B988B9025E263B2831 /* [CP] Check Pods Manifest.lock */,
 				BA6DD41D239B124800078BB3 /* Sources */,
 				BA6DD41E239B124800078BB3 /* Frameworks */,
 				BA6DD41F239B124800078BB3 /* Resources */,
+				852BF7CD99C5FC92C1CE1425 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6DD410239B124800078BB3 /* LaunchScreen.storyboard in Resources */,
+				BA6DD434239B172400078BB3 /* GoogleService-Info.plist in Resources */,
 				BA6DD40D239B124800078BB3 /* Assets.xcassets in Resources */,
 				BA6DD408239B124600078BB3 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +305,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5433EA9FDD907DE09252B022 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Love AlertTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5643C1300AF0CF7BE51F31B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Love Alert/Pods-Love Alert-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Love Alert/Pods-Love Alert-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Love Alert/Pods-Love Alert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		764B74B505A7C6983DA05FC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Love Alert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		852BF7CD99C5FC92C1CE1425 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Love Alert-Love AlertUITests/Pods-Love Alert-Love AlertUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Love Alert-Love AlertUITests/Pods-Love Alert-Love AlertUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Love Alert-Love AlertUITests/Pods-Love Alert-Love AlertUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFB911B988B9025E263B2831 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Love Alert-Love AlertUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA6DD3F9239B124600078BB3 /* Sources */ = {
@@ -436,6 +588,7 @@
 		};
 		BA6DD42B239B124800078BB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC0BCC07D9ABE27ED0B9AFBE /* Pods-Love Alert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +607,7 @@
 		};
 		BA6DD42C239B124800078BB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA3192C3A24536B6E3C2A29A /* Pods-Love Alert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +626,7 @@
 		};
 		BA6DD42E239B124800078BB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF127BCDD285517B1248395F /* Pods-Love AlertTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +649,7 @@
 		};
 		BA6DD42F239B124800078BB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33EB69B565C2801F67357984 /* Pods-Love AlertTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +672,7 @@
 		};
 		BA6DD431239B124800078BB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9A781673388D3FAE1AB3D9 /* Pods-Love Alert-Love AlertUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +693,7 @@
 		};
 		BA6DD432239B124800078BB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B163A056B8E468A233069335 /* Pods-Love Alert-Love AlertUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
