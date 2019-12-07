@@ -7,7 +7,8 @@ target 'Love Alert' do
 
   # Pods for Love Alert
   pod 'Firebase/Analytics'
-
+  pod 'GeoFire', :git => 'https://github.com/firebase/geofire-objc.git'	  
+		
   target 'Love AlertTests' do
     inherit! :search_paths
     # Pods for testing
