@@ -2,7 +2,7 @@
 
 //////////////////////////////////////////////////////////// About the app //////////////////////////////////////////////////////////// 
 
-For this final project, I thought about making an app allow someone to anoymuous annouce that they like someone in their immediate phicinitiy vicinity, of a range of 200 meter radius.
+For this final project, I thought about making an app allow someone to anoymuous annouce that they like someone in their immediate vicinity, of a range of 200 meter radius.
 
 When they push the heart button on the button of the screen, their location data will be send a Firebase database for 5 sec, during which user that is on the app during that 5 secs will be able to know that someone around has liked someone. It follows the idea of snapchat, with the users' location data automatically removed after a timer as well as their lcoation data being keyed in the Firebase database with their device UUID, rather then an email/password.
 
