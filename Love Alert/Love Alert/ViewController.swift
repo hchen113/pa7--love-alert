@@ -7,24 +7,40 @@ import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
+    //-----------------------------------------------------------------------------
+    //REFERENCE TO: https://firebaseopensource.com/projects/firebase/geofire-objc/
+    //-----------------------------------------------------------------------------
+    
+    
     @IBOutlet weak var top_text: UILabel!
     @IBOutlet weak var map: MKMapView!
     fileprivate let locationManager:CLLocationManager = CLLocationManager()
+    let geofireRef = Database.database().reference()
+    var userKey = UIDevice.current.identifierForVendor!.uuidString
     
-    var geoFireRef: DatabaseReference?
-    var geoFire: GeoFire?
     
     @IBAction func heart_clicked(_ sender: Any) {
-        
-        let userKey = UIDevice.current.identifierForVendor?.uuidString
+        let geoFire = GeoFire(firebaseRef: geofireRef)
         let currentLocation = locationManager.location
-        geoFire!.setLocation(CLLocation(latitude: (currentLocation?.coordinate.latitude)! , longitude: (currentLocation?.coordinate.longitude)!), forKey: userKey!)
-        
+        let userKey = UIDevice.current.identifierForVendor!.uuidString
+        geoFire.setLocation(CLLocation(latitude: (currentLocation?.coordinate.latitude)!, longitude: (currentLocation?.coordinate.longitude)!), forKey: userKey) { (error) in
+          if (error != nil) {
+            print("An error occured: \(String(describing: error))")
+          } else {
+            print("Saved location successfully!")
+          }
+        }
+            
         top_text.text = "You've just liked someone around you!"
         top_text.isHidden = false;
         _ = Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
             self.top_text.isHidden = true;
         }
+        _ = Timer.scheduledTimer(withTimeInterval: 60, repeats: false) { (timer) in
+            geoFire.removeKey(userKey)
+            print("Removed location data.")
+        }
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,18 +51,43 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.pausesLocationUpdatesAutomatically = false
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
-        
-        map.showsUserLocation = true;
+
+        map.showsUserLocation = true
         map.userTrackingMode = .follow
-        top_text.isHidden = true;
-        
-        let geoFireRef = Database.database().reference()
-        let geoFire = GeoFire(firebaseRef: geoFireRef)
-        
-        
-        
+        top_text.isHidden = true
+        notify()
+    }
+    
+    
+    
+    func notify(){
+        _ = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { (timer) in
+            print("Starting Notify()")
+            let geofireRef = Database.database().reference()
+            let geoFire = GeoFire(firebaseRef: geofireRef)
+            let currentLocation = self.locationManager.location
+            //let center = CLLocation(latitude: (currentLocation?.coordinate.latitude)!, longitude: (currentLocation?.coordinate.latitude)!)
+            let circleQuery = geoFire.query(at: currentLocation!, withRadius: 0.1)
+            _ = circleQuery.observe(.keyEntered, with: { (key: String?, location: CLLocation?) in
+                self.top_text.text = "Someone around you just liked someone!"
+                self.top_text.isHidden = false;
+                _ = Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
+                    self.top_text.isHidden = true;
+                }
+            })
+            _ = circleQuery.observeReady({
+                   print("  All initial data has been loaded and events have been fired!")
+               })
+
+        }
     }
 
 
+    
+    
+    
+    
+    
+    
 }
 
