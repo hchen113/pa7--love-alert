@@ -69,6 +69,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             //let center = CLLocation(latitude: (currentLocation?.coordinate.latitude)!, longitude: (currentLocation?.coordinate.latitude)!)
             let circleQuery = geoFire.query(at: currentLocation!, withRadius: 0.1)
             _ = circleQuery.observe(.keyEntered, with: { (key: String?, location: CLLocation?) in
+                geoFire.getLocationForKey(key!) { (location, error) in
+                  if (error != nil) {
+                    print("An error occurred getting the location for Key")
+                  } else if (location != nil) {
+                    print("Location for \"firebase-hq\" is [\(location!.coordinate.latitude), \(location!.coordinate.longitude)]")
+                    let annotation = MKPointAnnotation()
+                    annotation.coordinate = location!.coordinate
+                    self.map.addAnnotation(annotation)
+                  } else {
+                    print("GeoFire does not contain a location for \"firebase-hq\"")
+                  }
+                }
+                
                 self.top_text.text = "Someone around you just liked someone!"
                 self.top_text.isHidden = false;
                 _ = Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
