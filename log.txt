@@ -1,0 +1,866 @@
+commit d129fad00a3074c5c88944c736aa18472f5f4389
+Author: Henry Chen <hchen113@binghamton.edu>
+Date:   Sat Dec 7 18:14:57 2019 -0500
+
+    screenshots
+
+ .DS_Store                                           | Bin 10244 -> 12292 bytes
+ Love Alert/.DS_Store                                | Bin 10244 -> 8196 bytes
+ .../UserInterfaceState.xcuserstate                  | Bin 25303 -> 25762 bytes
+ README.md                                           |  12 ++++++++++++
+ Screenshots/IMG_0339.PNG                            | Bin 0 -> 733288 bytes
+ Screenshots/IMG_0340.PNG                            | Bin 0 -> 706729 bytes
+ Screenshots/IMG_0341.PNG                            | Bin 0 -> 733163 bytes
+ 7 files changed, 12 insertions(+)
+
+commit 216099b209b4569024889233fbecc13b1fc4ebc5
+Author: Henry Chen <hchen113@binghamton.edu>
+Date:   Sat Dec 7 17:40:48 2019 -0500
+
+    update
+
+ Love Alert/.DS_Store                                | Bin 10244 -> 10244 bytes
+ .../UserInterfaceState.xcuserstate                  | Bin 25304 -> 25303 bytes
+ Love Alert/Love Alert/ViewController.swift          |  13 +++++++++++++
+ 3 files changed, 13 insertions(+)
+
+commit d5edf42610c2da1599c2809477c238d01c6ad63e
+Author: Henry Chen <hchen113@binghamton.edu>
+Date:   Sat Dec 7 17:15:39 2019 -0500
+
+    update
+    
+    finally got 'someone around you like someone' part to show up'
+
+ .DS_Store                                          | Bin 10244 -> 10244 bytes
+ Love Alert/.DS_Store                               | Bin 10244 -> 10244 bytes
+ .../UserInterfaceState.xcuserstate                 | Bin 24500 -> 25304 bytes
+ Love Alert/Love Alert/ViewController.swift         |  71 ++++++++++++++++-----
+ 4 files changed, 56 insertions(+), 15 deletions(-)
+
+commit 9517c2355f575a0c5ab9c1af64f80f450bea94a8
+Author: Henry Chen <hchen113@binghamton.edu>
+Date:   Fri Dec 6 19:10:48 2019 -0500
+
+    pods update
+
+ Love Alert/.DS_Store                               |  Bin 8196 -> 10244 bytes
+ .../xcschemes/xcschememanagement.plist             |    2 +-
+ .../UserInterfaceState.xcuserstate                 |  Bin 22217 -> 24500 bytes
+ Love Alert/Love Alert/ViewController.swift         |   21 +-
+ Love Alert/Podfile                                 |    3 +-
+ Love Alert/Podfile.lock                            |   30 +-
+ .../Interop/Auth/Public/FIRAuthInterop.h           |   42 +
+ Love Alert/Pods/FirebaseAuthInterop/LICENSE        |  202 +
+ Love Alert/Pods/FirebaseAuthInterop/README.md      |  179 +
+ .../Firebase/Database/Api/FIRDataSnapshot.m        |  105 +
+ .../Firebase/Database/Api/FIRDatabase.m            |  234 +
+ .../Firebase/Database/Api/FIRDatabaseComponent.h   |   46 +
+ .../Firebase/Database/Api/FIRDatabaseComponent.m   |  173 +
+ .../Firebase/Database/Api/FIRDatabaseConfig.h      |   70 +
+ .../Firebase/Database/Api/FIRDatabaseConfig.m      |   92 +
+ .../Firebase/Database/Api/FIRDatabaseQuery.m       |  677 +++
+ .../Firebase/Database/Api/FIRMutableData.m         |  149 +
+ .../Firebase/Database/Api/FIRServerValue.m         |   30 +
+ .../Firebase/Database/Api/FIRTransactionResult.m   |   39 +
+ .../Database/Api/Private/FIRDataSnapshot_Private.h |   28 +
+ .../Api/Private/FIRDatabaseQuery_Private.h         |   43 +
+ .../Api/Private/FIRDatabaseReference_Private.h     |   27 +
+ .../Database/Api/Private/FIRDatabase_Private.h     |   37 +
+ .../Database/Api/Private/FIRMutableData_Private.h  |   26 +
+ .../Api/Private/FIRTransactionResult_Private.h     |   25 +
+ .../Database/Api/Private/FTypedefs_Private.h       |   60 +
+ .../Firebase/Database/Constants/FConstants.h       |  195 +
+ .../Firebase/Database/Constants/FConstants.m       |  185 +
+ .../Firebase/Database/Core/FCompoundHash.h         |   38 +
+ .../Firebase/Database/Core/FCompoundHash.m         |  259 +
+ .../Firebase/Database/Core/FListenProvider.h       |   32 +
+ .../Firebase/Database/Core/FListenProvider.m       |   25 +
+ .../Firebase/Database/Core/FPersistentConnection.h |   99 +
+ .../Firebase/Database/Core/FPersistentConnection.m | 1141 ++++
+ .../Firebase/Database/Core/FQueryParams.h          |   60 +
+ .../Firebase/Database/Core/FQueryParams.m          |  393 ++
+ .../Firebase/Database/Core/FQuerySpec.h            |   36 +
+ .../Firebase/Database/Core/FQuerySpec.m            |   86 +
+ .../Firebase/Database/Core/FRangeMerge.h           |   39 +
+ .../Firebase/Database/Core/FRangeMerge.m           |  134 +
+ .../Firebase/Database/Core/FRepo.h                 |   93 +
+ .../Firebase/Database/Core/FRepo.m                 | 1450 +++++
+ .../Firebase/Database/Core/FRepoInfo.h             |   40 +
+ .../Firebase/Database/Core/FRepoInfo.m             |  144 +
+ .../Firebase/Database/Core/FRepoManager.h          |   34 +
+ .../Firebase/Database/Core/FRepoManager.m          |  148 +
+ .../Firebase/Database/Core/FRepo_Private.h         |   42 +
+ .../Firebase/Database/Core/FServerValues.h         |   33 +
+ .../Firebase/Database/Core/FServerValues.m         |  115 +
+ .../Firebase/Database/Core/FSnapshotHolder.h       |   27 +
+ .../Firebase/Database/Core/FSnapshotHolder.m       |   46 +
+ .../Firebase/Database/Core/FSparseSnapshotTree.h   |   34 +
+ .../Firebase/Database/Core/FSparseSnapshotTree.m   |  144 +
+ .../Firebase/Database/Core/FSyncPoint.h            |   69 +
+ .../Firebase/Database/Core/FSyncPoint.m            |  302 ++
+ .../Firebase/Database/Core/FSyncTree.h             |   82 +
+ .../Firebase/Database/Core/FSyncTree.m             | 1038 ++++
+ .../Firebase/Database/Core/FWriteRecord.h          |   45 +
+ .../Firebase/Database/Core/FWriteRecord.m          |  139 +
+ .../Firebase/Database/Core/FWriteTree.h            |   70 +
+ .../Firebase/Database/Core/FWriteTree.m            |  577 ++
+ .../Firebase/Database/Core/FWriteTreeRef.h         |   57 +
+ .../Firebase/Database/Core/FWriteTreeRef.m         |  159 +
+ .../Database/Core/Operation/FAckUserWrite.h        |   37 +
+ .../Database/Core/Operation/FAckUserWrite.m        |   66 +
+ .../Firebase/Database/Core/Operation/FMerge.h      |   32 +
+ .../Firebase/Database/Core/Operation/FMerge.m      |   85 +
+ .../Firebase/Database/Core/Operation/FOperation.h  |   34 +
+ .../Database/Core/Operation/FOperationSource.h     |   37 +
+ .../Database/Core/Operation/FOperationSource.m     |   86 +
+ .../Firebase/Database/Core/Operation/FOverwrite.h  |   32 +
+ .../Firebase/Database/Core/Operation/FOverwrite.m  |   67 +
+ .../Database/Core/Utilities/FIRRetryHelper.h       |   33 +
+ .../Database/Core/Utilities/FIRRetryHelper.m       |  140 +
+ .../Database/Core/Utilities/FImmutableTree.h       |   59 +
+ .../Database/Core/Utilities/FImmutableTree.m       |  486 ++
+ .../Firebase/Database/Core/Utilities/FPath.h       |   46 +
+ .../Firebase/Database/Core/Utilities/FPath.m       |  304 ++
+ .../Firebase/Database/Core/Utilities/FTree.h       |   52 +
+ .../Firebase/Database/Core/Utilities/FTree.m       |  193 +
+ .../Firebase/Database/Core/Utilities/FTreeNode.h   |   25 +
+ .../Firebase/Database/Core/Utilities/FTreeNode.m   |   35 +
+ .../Firebase/Database/Core/View/FCacheNode.h       |   46 +
+ .../Firebase/Database/Core/View/FCacheNode.m       |   60 +
+ .../Firebase/Database/Core/View/FCancelEvent.h     |   31 +
+ .../Firebase/Database/Core/View/FCancelEvent.m     |   57 +
+ .../Firebase/Database/Core/View/FChange.h          |   41 +
+ .../Firebase/Database/Core/View/FChange.m          |   72 +
+ .../Database/Core/View/FChildEventRegistration.h   |   37 +
+ .../Database/Core/View/FChildEventRegistration.m   |  112 +
+ .../Firebase/Database/Core/View/FDataEvent.h       |   41 +
+ .../Firebase/Database/Core/View/FDataEvent.m       |   83 +
+ .../Firebase/Database/Core/View/FEvent.h           |   27 +
+ .../Firebase/Database/Core/View/FEventRaiser.h     |   36 +
+ .../Firebase/Database/Core/View/FEventRaiser.m     |   74 +
+ .../Database/Core/View/FEventRegistration.h        |   38 +
+ .../Core/View/FKeepSyncedEventRegistration.h       |   28 +
+ .../Core/View/FKeepSyncedEventRegistration.m       |   70 +
+ .../Database/Core/View/FValueEventRegistration.h   |   34 +
+ .../Database/Core/View/FValueEventRegistration.m   |  102 +
+ .../Firebase/Database/Core/View/FView.h            |   56 +
+ .../Firebase/Database/Core/View/FView.m            |  266 +
+ .../Firebase/Database/Core/View/FViewCache.h       |   40 +
+ .../Firebase/Database/Core/View/FViewCache.m       |   72 +
+ .../Core/View/Filter/FChildChangeAccumulator.h     |   27 +
+ .../Core/View/Filter/FChildChangeAccumulator.m     |   99 +
+ .../Core/View/Filter/FCompleteChildSource.h        |   30 +
+ .../Database/Core/View/Filter/FIndexedFilter.h     |   26 +
+ .../Database/Core/View/Filter/FIndexedFilter.m     |  164 +
+ .../Database/Core/View/Filter/FLimitedFilter.h     |   25 +
+ .../Database/Core/View/Filter/FLimitedFilter.m     |  285 +
+ .../Database/Core/View/Filter/FNodeFilter.h        |   77 +
+ .../FirebaseDatabase/Firebase/Database/FClock.h    |   35 +
+ .../FirebaseDatabase/Firebase/Database/FClock.m    |   58 +
+ .../Firebase/Database/FEventGenerator.h            |   28 +
+ .../Firebase/Database/FEventGenerator.m            |  169 +
+ .../Firebase/Database/FIRDatabaseConfig_Private.h  |   31 +
+ .../Firebase/Database/FIRDatabaseReference.m       |  528 ++
+ .../FirebaseDatabase/Firebase/Database/FIndex.h    |   51 +
+ .../FirebaseDatabase/Firebase/Database/FIndex.m    |   39 +
+ .../FirebaseDatabase/Firebase/Database/FKeyIndex.h |   22 +
+ .../FirebaseDatabase/Firebase/Database/FKeyIndex.m |  123 +
+ .../Firebase/Database/FListenComplete.h            |   28 +
+ .../Firebase/Database/FListenComplete.m            |   55 +
+ .../FirebaseDatabase/Firebase/Database/FMaxNode.h  |   22 +
+ .../FirebaseDatabase/Firebase/Database/FMaxNode.m  |   58 +
+ .../Firebase/Database/FNamedNode.h                 |   31 +
+ .../Firebase/Database/FNamedNode.m                 |  102 +
+ .../Firebase/Database/FPathIndex.h                 |   23 +
+ .../Firebase/Database/FPathIndex.m                 |  135 +
+ .../Firebase/Database/FPriorityIndex.h             |   23 +
+ .../Firebase/Database/FPriorityIndex.m             |  126 +
+ .../Firebase/Database/FRangedFilter.h              |   31 +
+ .../Firebase/Database/FRangedFilter.m              |  129 +
+ .../Firebase/Database/FTransformedEnumerator.h     |   24 +
+ .../Firebase/Database/FTransformedEnumerator.m     |   44 +
+ .../Firebase/Database/FValueIndex.h                |   22 +
+ .../Firebase/Database/FValueIndex.m                |  112 +
+ .../Firebase/Database/FViewProcessor.h             |   42 +
+ .../Firebase/Database/FViewProcessor.m             |  831 +++
+ .../Firebase/Database/FViewProcessorResult.h       |   29 +
+ .../Firebase/Database/FViewProcessorResult.m       |   35 +
+ .../Firebase/Database/Login/FAuthTokenProvider.h   |   39 +
+ .../Firebase/Database/Login/FAuthTokenProvider.m   |  123 +
+ .../Database/Login/FIRNoopAuthTokenProvider.h      |   22 +
+ .../Database/Login/FIRNoopAuthTokenProvider.m      |   34 +
+ .../Firebase/Database/Persistence/FCachePolicy.h   |   41 +
+ .../Firebase/Database/Persistence/FCachePolicy.m   |   82 +
+ .../Database/Persistence/FLevelDBStorageEngine.h   |   39 +
+ .../Database/Persistence/FLevelDBStorageEngine.m   |  990 ++++
+ .../Firebase/Database/Persistence/FPendingPut.h    |   53 +
+ .../Firebase/Database/Persistence/FPendingPut.m    |  113 +
+ .../Database/Persistence/FPersistenceManager.h     |   60 +
+ .../Database/Persistence/FPersistenceManager.m     |  231 +
+ .../Firebase/Database/Persistence/FPruneForest.h   |   38 +
+ .../Firebase/Database/Persistence/FPruneForest.m   |  194 +
+ .../Firebase/Database/Persistence/FStorageEngine.h |   60 +
+ .../Firebase/Database/Persistence/FTrackedQuery.h  |   43 +
+ .../Firebase/Database/Persistence/FTrackedQuery.m  |  113 +
+ .../Database/Persistence/FTrackedQueryManager.h    |   52 +
+ .../Database/Persistence/FTrackedQueryManager.m    |  375 ++
+ .../Firebase/Database/Public/FIRDataEventType.h    |   39 +
+ .../Firebase/Database/Public/FIRDataSnapshot.h     |  142 +
+ .../Firebase/Database/Public/FIRDatabase.h         |  182 +
+ .../Firebase/Database/Public/FIRDatabaseQuery.h    |  395 ++
+ .../Database/Public/FIRDatabaseReference.h         |  861 +++
+ .../Firebase/Database/Public/FIRMutableData.h      |  128 +
+ .../Firebase/Database/Public/FIRServerValue.h      |   36 +
+ .../Database/Public/FIRTransactionResult.h         |   50 +
+ .../Firebase/Database/Public/FirebaseDatabase.h    |   29 +
+ .../Firebase/Database/Realtime/FConnection.h       |   59 +
+ .../Firebase/Database/Realtime/FConnection.m       |  234 +
+ .../Database/Realtime/FWebSocketConnection.h       |   53 +
+ .../Database/Realtime/FWebSocketConnection.m       |  346 ++
+ .../Firebase/Database/Snapshot/FChildrenNode.h     |   42 +
+ .../Firebase/Database/Snapshot/FChildrenNode.m     |  418 ++
+ .../Firebase/Database/Snapshot/FCompoundWrite.h    |   64 +
+ .../Firebase/Database/Snapshot/FCompoundWrite.m    |  304 ++
+ .../Firebase/Database/Snapshot/FEmptyNode.h        |   24 +
+ .../Firebase/Database/Snapshot/FEmptyNode.m        |   30 +
+ .../Firebase/Database/Snapshot/FIndexedNode.h      |   55 +
+ .../Firebase/Database/Snapshot/FIndexedNode.m      |  218 +
+ .../Firebase/Database/Snapshot/FLeafNode.h         |   27 +
+ .../Firebase/Database/Snapshot/FLeafNode.m         |  266 +
+ .../Firebase/Database/Snapshot/FNode.h             |   50 +
+ .../Database/Snapshot/FSnapshotUtilities.h         |   49 +
+ .../Database/Snapshot/FSnapshotUtilities.m         |  394 ++
+ .../Firebase/Database/Utilities/FAtomicNumber.h    |   23 +
+ .../Firebase/Database/Utilities/FAtomicNumber.m    |   55 +
+ .../Firebase/Database/Utilities/FEventEmitter.h    |   36 +
+ .../Firebase/Database/Utilities/FEventEmitter.m    |  161 +
+ .../Firebase/Database/Utilities/FNextPushId.h      |   23 +
+ .../Firebase/Database/Utilities/FNextPushId.m      |   62 +
+ .../Firebase/Database/Utilities/FParsedUrl.h       |   25 +
+ .../Firebase/Database/Utilities/FParsedUrl.m       |   24 +
+ .../Firebase/Database/Utilities/FStringUtilities.h |   26 +
+ .../Firebase/Database/Utilities/FStringUtilities.m |   72 +
+ .../Firebase/Database/Utilities/FTypedefs.h        |   46 +
+ .../Firebase/Database/Utilities/FUtilities.h       |   82 +
+ .../Firebase/Database/Utilities/FUtilities.m       |  433 ++
+ .../Firebase/Database/Utilities/FValidation.h      |   55 +
+ .../Firebase/Database/Utilities/FValidation.m      |  461 ++
+ .../Database/Utilities/Tuples/FTupleBoolBlock.h    |   25 +
+ .../Database/Utilities/Tuples/FTupleBoolBlock.m    |   24 +
+ .../Utilities/Tuples/FTupleCallbackStatus.h        |   24 +
+ .../Utilities/Tuples/FTupleCallbackStatus.m        |   22 +
+ .../Database/Utilities/Tuples/FTupleFirebase.h     |   26 +
+ .../Database/Utilities/Tuples/FTupleFirebase.m     |   25 +
+ .../Database/Utilities/Tuples/FTupleNodePath.h     |   28 +
+ .../Database/Utilities/Tuples/FTupleNodePath.m     |   33 +
+ .../Database/Utilities/Tuples/FTupleObjectNode.h   |   27 +
+ .../Database/Utilities/Tuples/FTupleObjectNode.m   |   32 +
+ .../Database/Utilities/Tuples/FTupleObjects.h      |   24 +
+ .../Database/Utilities/Tuples/FTupleObjects.m      |   24 +
+ .../Database/Utilities/Tuples/FTupleOnDisconnect.h |   27 +
+ .../Database/Utilities/Tuples/FTupleOnDisconnect.m |   26 +
+ .../Database/Utilities/Tuples/FTuplePathValue.h    |   25 +
+ .../Database/Utilities/Tuples/FTuplePathValue.m    |   38 +
+ .../Utilities/Tuples/FTupleRemovedQueriesEvents.h  |   30 +
+ .../Utilities/Tuples/FTupleRemovedQueriesEvents.m  |   37 +
+ .../Database/Utilities/Tuples/FTupleSetIdPath.h    |   27 +
+ .../Database/Utilities/Tuples/FTupleSetIdPath.m    |   33 +
+ .../Database/Utilities/Tuples/FTupleStringNode.h   |   27 +
+ .../Database/Utilities/Tuples/FTupleStringNode.m   |   33 +
+ .../Firebase/Database/Utilities/Tuples/FTupleTSN.h |   25 +
+ .../Firebase/Database/Utilities/Tuples/FTupleTSN.m |   24 +
+ .../Database/Utilities/Tuples/FTupleTransaction.h  |   75 +
+ .../Database/Utilities/Tuples/FTupleTransaction.m  |   41 +
+ .../Database/Utilities/Tuples/FTupleUserCallback.h |   32 +
+ .../Database/Utilities/Tuples/FTupleUserCallback.m |   35 +
+ .../FArraySortedDictionary.h                       |   21 +
+ .../FArraySortedDictionary.m                       |  266 +
+ .../FImmutableSortedDictionary.h                   |   54 +
+ .../FImmutableSortedDictionary.m                   |  142 +
+ .../FImmutableSortedSet.h                          |   22 +
+ .../FImmutableSortedSet.m                          |  115 +
+ .../FImmutableSortedDictionary/FLLRBEmptyNode.h    |   27 +
+ .../FImmutableSortedDictionary/FLLRBEmptyNode.m    |   72 +
+ .../FImmutableSortedDictionary/FLLRBNode.h         |   29 +
+ .../FImmutableSortedDictionary/FLLRBValueNode.h    |   29 +
+ .../FImmutableSortedDictionary/FLLRBValueNode.m    |  230 +
+ .../FTreeSortedDictionary.h                        |   30 +
+ .../FTreeSortedDictionary.m                        |  326 ++
+ .../FTreeSortedDictionaryEnumerator.h              |    9 +
+ .../FTreeSortedDictionaryEnumerator.m              |   83 +
+ .../third_party/SocketRocket/FSRWebSocket.h        |  107 +
+ .../third_party/SocketRocket/FSRWebSocket.m        | 1858 +++++++
+ .../SocketRocket/NSData+SRB64Additions.h           |   23 +
+ .../SocketRocket/NSData+SRB64Additions.m           |   37 +
+ .../Database/third_party/SocketRocket/fbase64.c    |  318 ++
+ .../Database/third_party/SocketRocket/fbase64.h    |   33 +
+ .../Database/third_party/Wrap-leveldb/APLevelDB.h  |  105 +
+ .../Database/third_party/Wrap-leveldb/APLevelDB.mm |  500 ++
+ Love Alert/Pods/FirebaseDatabase/LICENSE           |  202 +
+ Love Alert/Pods/FirebaseDatabase/README.md         |  231 +
+ .../Pods/GeoFire/GeoFire/API/GFCircleQuery.h       |   27 +
+ Love Alert/Pods/GeoFire/GeoFire/API/GFQuery.h      |  134 +
+ .../Pods/GeoFire/GeoFire/API/GFRegionQuery.h       |   24 +
+ Love Alert/Pods/GeoFire/GeoFire/API/GeoFire.h      |  134 +
+ .../GeoFire/GeoFire/Implementation/GFBase32Utils.h |   20 +
+ .../GeoFire/GeoFire/Implementation/GFBase32Utils.m |   43 +
+ .../GeoFire/GeoFire/Implementation/GFGeoHash.h     |   30 +
+ .../GeoFire/GeoFire/Implementation/GFGeoHash.m     |  143 +
+ .../GeoFire/Implementation/GFGeoHashQuery.h        |   28 +
+ .../GeoFire/Implementation/GFGeoHashQuery.m        |  297 ++
+ .../GeoFire/Implementation/GFQuery+Private.h       |   39 +
+ .../Pods/GeoFire/GeoFire/Implementation/GFQuery.m  |  628 +++
+ .../GeoFire/Implementation/GeoFire+Private.h       |   19 +
+ .../Pods/GeoFire/GeoFire/Implementation/GeoFire.m  |  184 +
+ Love Alert/Pods/GeoFire/LICENSE                    |   21 +
+ Love Alert/Pods/GeoFire/README.md                  |  317 ++
+ .../Private/FirebaseAuthInterop/FIRAuthInterop.h   |    1 +
+ .../Public/FirebaseAuthInterop/FIRAuthInterop.h    |    1 +
+ .../Pods/Local Podspecs/GeoFire.podspec.json       |   33 +
+ Love Alert/Pods/Manifest.lock                      |   30 +-
+ Love Alert/Pods/Pods.xcodeproj/project.pbxproj     | 5613 ++++++++++++++------
+ .../xcschemes/FirebaseAuthInterop.xcscheme         |   60 +
+ .../xcschemes/FirebaseDatabase.xcscheme            |   60 +
+ .../henry.xcuserdatad/xcschemes/GeoFire.xcscheme   |   60 +
+ .../xcschemes/leveldb-library.xcscheme             |   58 +
+ .../xcschemes/xcschememanagement.plist             |   50 +-
+ .../Firebase/Firebase.xcconfig                     |    2 +-
+ .../FirebaseAuthInterop.xcconfig                   |   10 +
+ .../FirebaseDatabase/FirebaseDatabase-Info.plist   |   26 +
+ .../FirebaseDatabase/FirebaseDatabase-dummy.m      |    5 +
+ .../FirebaseDatabase/FirebaseDatabase-umbrella.h   |   25 +
+ .../FirebaseDatabase/FirebaseDatabase.modulemap    |    6 +
+ .../FirebaseDatabase/FirebaseDatabase.xcconfig     |   12 +
+ .../GeoFire/GeoFire-Info.plist                     |   26 +
+ .../Target Support Files/GeoFire/GeoFire-dummy.m   |    5 +
+ .../GeoFire/GeoFire-prefix.pch                     |   12 +
+ .../GeoFire/GeoFire-umbrella.h                     |   25 +
+ .../Target Support Files/GeoFire/GeoFire.modulemap |    6 +
+ .../Target Support Files/GeoFire/GeoFire.xcconfig  |   11 +
+ ...ert-Love AlertUITests-acknowledgements.markdown |  468 ++
+ ... Alert-Love AlertUITests-acknowledgements.plist |  492 ++
+ ...UITests-frameworks-Debug-input-files.xcfilelist |    1 +
+ ...ITests-frameworks-Debug-output-files.xcfilelist |    1 +
+ ...Tests-frameworks-Release-input-files.xcfilelist |    1 +
+ ...ests-frameworks-Release-output-files.xcfilelist |    1 +
+ ...Pods-Love Alert-Love AlertUITests-frameworks.sh |    2 +
+ ...ods-Love Alert-Love AlertUITests.debug.xcconfig |    6 +-
+ ...s-Love Alert-Love AlertUITests.release.xcconfig |    6 +-
+ .../Pods-Love Alert-acknowledgements.markdown      |  468 ++
+ .../Pods-Love Alert-acknowledgements.plist         |  492 ++
+ ...e Alert-frameworks-Debug-input-files.xcfilelist |    1 +
+ ... Alert-frameworks-Debug-output-files.xcfilelist |    1 +
+ ...Alert-frameworks-Release-input-files.xcfilelist |    1 +
+ ...lert-frameworks-Release-output-files.xcfilelist |    1 +
+ .../Pods-Love Alert/Pods-Love Alert-frameworks.sh  |    2 +
+ .../Pods-Love Alert/Pods-Love Alert.debug.xcconfig |    6 +-
+ .../Pods-Love Alert.release.xcconfig               |    6 +-
+ .../Pods-Love AlertTests.debug.xcconfig            |    6 +-
+ .../Pods-Love AlertTests.release.xcconfig          |    6 +-
+ .../leveldb-library/leveldb-library-Info.plist     |   26 +
+ .../leveldb-library/leveldb-library-dummy.m        |    5 +
+ .../leveldb-library/leveldb-library-prefix.pch     |   12 +
+ .../leveldb-library/leveldb-library-umbrella.h     |   31 +
+ .../leveldb-library/leveldb-library.modulemap      |    6 +
+ .../leveldb-library/leveldb-library.xcconfig       |   13 +
+ Love Alert/Pods/leveldb-library/LICENSE            |   27 +
+ Love Alert/Pods/leveldb-library/README.md          |  225 +
+ Love Alert/Pods/leveldb-library/db/builder.cc      |   79 +
+ Love Alert/Pods/leveldb-library/db/builder.h       |   30 +
+ Love Alert/Pods/leveldb-library/db/c.cc            |  566 ++
+ Love Alert/Pods/leveldb-library/db/db_impl.cc      | 1550 ++++++
+ Love Alert/Pods/leveldb-library/db/db_impl.h       |  216 +
+ Love Alert/Pods/leveldb-library/db/db_iter.cc      |  309 ++
+ Love Alert/Pods/leveldb-library/db/db_iter.h       |   26 +
+ Love Alert/Pods/leveldb-library/db/dbformat.cc     |  140 +
+ Love Alert/Pods/leveldb-library/db/dbformat.h      |  218 +
+ Love Alert/Pods/leveldb-library/db/dumpfile.cc     |  232 +
+ Love Alert/Pods/leveldb-library/db/filename.cc     |  141 +
+ Love Alert/Pods/leveldb-library/db/filename.h      |   84 +
+ Love Alert/Pods/leveldb-library/db/log_format.h    |   35 +
+ Love Alert/Pods/leveldb-library/db/log_reader.cc   |  274 +
+ Love Alert/Pods/leveldb-library/db/log_reader.h    |  112 +
+ Love Alert/Pods/leveldb-library/db/log_writer.cc   |  111 +
+ Love Alert/Pods/leveldb-library/db/log_writer.h    |   54 +
+ Love Alert/Pods/leveldb-library/db/memtable.cc     |  136 +
+ Love Alert/Pods/leveldb-library/db/memtable.h      |   87 +
+ Love Alert/Pods/leveldb-library/db/repair.cc       |  450 ++
+ Love Alert/Pods/leveldb-library/db/skiplist.h      |  382 ++
+ Love Alert/Pods/leveldb-library/db/snapshot.h      |   95 +
+ Love Alert/Pods/leveldb-library/db/table_cache.cc  |  120 +
+ Love Alert/Pods/leveldb-library/db/table_cache.h   |   58 +
+ Love Alert/Pods/leveldb-library/db/version_edit.cc |  260 +
+ Love Alert/Pods/leveldb-library/db/version_edit.h  |  106 +
+ Love Alert/Pods/leveldb-library/db/version_set.cc  | 1585 ++++++
+ Love Alert/Pods/leveldb-library/db/version_set.h   |  393 ++
+ Love Alert/Pods/leveldb-library/db/write_batch.cc  |  150 +
+ .../Pods/leveldb-library/db/write_batch_internal.h |   45 +
+ .../Pods/leveldb-library/include/leveldb/c.h       |  270 +
+ .../Pods/leveldb-library/include/leveldb/cache.h   |  111 +
+ .../leveldb-library/include/leveldb/comparator.h   |   64 +
+ .../Pods/leveldb-library/include/leveldb/db.h      |  167 +
+ .../leveldb-library/include/leveldb/dumpfile.h     |   28 +
+ .../Pods/leveldb-library/include/leveldb/env.h     |  387 ++
+ .../Pods/leveldb-library/include/leveldb/export.h  |   33 +
+ .../include/leveldb/filter_policy.h                |   72 +
+ .../leveldb-library/include/leveldb/iterator.h     |  112 +
+ .../Pods/leveldb-library/include/leveldb/options.h |  187 +
+ .../Pods/leveldb-library/include/leveldb/slice.h   |  115 +
+ .../Pods/leveldb-library/include/leveldb/status.h  |  122 +
+ .../Pods/leveldb-library/include/leveldb/table.h   |   84 +
+ .../include/leveldb/table_builder.h                |   93 +
+ .../leveldb-library/include/leveldb/write_batch.h  |   83 +
+ Love Alert/Pods/leveldb-library/port/port.h        |   19 +
+ .../Pods/leveldb-library/port/port_example.h       |  104 +
+ Love Alert/Pods/leveldb-library/port/port_stdcxx.h |  153 +
+ .../Pods/leveldb-library/port/thread_annotations.h |  108 +
+ Love Alert/Pods/leveldb-library/table/block.cc     |  266 +
+ Love Alert/Pods/leveldb-library/table/block.h      |   44 +
+ .../Pods/leveldb-library/table/block_builder.cc    |  108 +
+ .../Pods/leveldb-library/table/block_builder.h     |   55 +
+ .../Pods/leveldb-library/table/filter_block.cc     |  106 +
+ .../Pods/leveldb-library/table/filter_block.h      |   69 +
+ Love Alert/Pods/leveldb-library/table/format.cc    |  141 +
+ Love Alert/Pods/leveldb-library/table/format.h     |  100 +
+ Love Alert/Pods/leveldb-library/table/iterator.cc  |   76 +
+ .../Pods/leveldb-library/table/iterator_wrapper.h  |   92 +
+ Love Alert/Pods/leveldb-library/table/merger.cc    |  191 +
+ Love Alert/Pods/leveldb-library/table/merger.h     |   26 +
+ Love Alert/Pods/leveldb-library/table/table.cc     |  273 +
+ .../Pods/leveldb-library/table/table_builder.cc    |  265 +
+ .../leveldb-library/table/two_level_iterator.cc    |  171 +
+ .../leveldb-library/table/two_level_iterator.h     |   31 +
+ Love Alert/Pods/leveldb-library/util/arena.cc      |   66 +
+ Love Alert/Pods/leveldb-library/util/arena.h       |   71 +
+ Love Alert/Pods/leveldb-library/util/bloom.cc      |   92 +
+ Love Alert/Pods/leveldb-library/util/cache.cc      |  400 ++
+ Love Alert/Pods/leveldb-library/util/coding.cc     |  192 +
+ Love Alert/Pods/leveldb-library/util/coding.h      |  104 +
+ Love Alert/Pods/leveldb-library/util/comparator.cc |   73 +
+ Love Alert/Pods/leveldb-library/util/crc32c.cc     |  380 ++
+ Love Alert/Pods/leveldb-library/util/crc32c.h      |   43 +
+ Love Alert/Pods/leveldb-library/util/env.cc        |   92 +
+ Love Alert/Pods/leveldb-library/util/env_posix.cc  |  876 +++
+ .../leveldb-library/util/env_posix_test_helper.h   |   28 +
+ .../leveldb-library/util/env_windows_test_helper.h |   25 +
+ .../Pods/leveldb-library/util/filter_policy.cc     |   11 +
+ Love Alert/Pods/leveldb-library/util/hash.cc       |   55 +
+ Love Alert/Pods/leveldb-library/util/hash.h        |   19 +
+ Love Alert/Pods/leveldb-library/util/histogram.cc  |  272 +
+ Love Alert/Pods/leveldb-library/util/histogram.h   |   44 +
+ Love Alert/Pods/leveldb-library/util/logging.cc    |   85 +
+ Love Alert/Pods/leveldb-library/util/logging.h     |   45 +
+ Love Alert/Pods/leveldb-library/util/mutexlock.h   |   39 +
+ .../Pods/leveldb-library/util/no_destructor.h      |   46 +
+ Love Alert/Pods/leveldb-library/util/options.cc    |   14 +
+ .../Pods/leveldb-library/util/posix_logger.h       |  130 +
+ Love Alert/Pods/leveldb-library/util/random.h      |   63 +
+ Love Alert/Pods/leveldb-library/util/status.cc     |   77 +
+ .../Pods/leveldb-library/util/testharness.cc       |   81 +
+ Love Alert/Pods/leveldb-library/util/testharness.h |  141 +
+ Love Alert/Pods/leveldb-library/util/testutil.h    |   66 +
+ .../Pods/leveldb-library/util/windows_logger.h     |  124 +
+ 417 files changed, 56342 insertions(+), 1760 deletions(-)
+
+commit cce0a4bf9012cc64395872c697a49951ed7acba3
+Author: Henry Chen <hchen113@binghamton.edu>
+Date:   Fri Dec 6 18:20:26 2019 -0500
+
+    firebase configured
+
+ .DS_Store                                          |  Bin 10244 -> 10244 bytes
+ Love Alert/.DS_Store                               |  Bin 6148 -> 8196 bytes
+ Love Alert/Love Alert.xcodeproj/project.pbxproj    |  160 +-
+ .../UserInterfaceState.xcuserstate                 |  Bin 29857 -> 28836 bytes
+ .../xcschemes/xcschememanagement.plist             |    2 +-
+ .../contents.xcworkspacedata                       |   10 +
+ .../xcshareddata/IDEWorkspaceChecks.plist          |    8 +
+ .../UserInterfaceState.xcuserstate                 |  Bin 0 -> 22217 bytes
+ Love Alert/Love Alert/.DS_Store                    |  Bin 0 -> 6148 bytes
+ Love Alert/Love Alert/AppDelegate.swift            |    2 +
+ Love Alert/Love Alert/GoogleService-Info.plist     |   36 +
+ Love Alert/Podfile                                 |   20 +
+ Love Alert/Podfile.lock                            |  100 +
+ .../Pods/Firebase/CoreOnly/Sources/Firebase.h      |  168 +
+ .../Firebase/CoreOnly/Sources/module.modulemap     |    4 +
+ Love Alert/Pods/Firebase/LICENSE                   |  202 ++
+ Love Alert/Pods/Firebase/README.md                 |  232 ++
+ .../FIRAnalyticsConnector                          |  Bin 0 -> 614160 bytes
+ .../Modules/module.modulemap                       |   11 +
+ .../FirebaseAnalytics.framework/FirebaseAnalytics  |  Bin 0 -> 507576 bytes
+ .../Headers/FIRAnalytics+AppDelegate.h             |   62 +
+ .../Headers/FIRAnalytics.h                         |  132 +
+ .../Headers/FIREventNames.h                        |  407 +++
+ .../Headers/FIRParameterNames.h                    |  532 +++
+ .../Headers/FIRUserPropertyNames.h                 |   29 +
+ .../Headers/FirebaseAnalytics.h                    |    5 +
+ .../Modules/module.modulemap                       |   12 +
+ .../Firebase/Core/FIRAnalyticsConfiguration.m      |   62 +
+ .../Pods/FirebaseCore/Firebase/Core/FIRApp.m       |  840 +++++
+ .../Firebase/Core/FIRAppAssociationRegistration.m  |   47 +
+ .../FirebaseCore/Firebase/Core/FIRBundleUtil.m     |   75 +
+ .../Pods/FirebaseCore/Firebase/Core/FIRComponent.m |   65 +
+ .../Firebase/Core/FIRComponentContainer.m          |  208 ++
+ .../FirebaseCore/Firebase/Core/FIRComponentType.m  |   28 +
+ .../FirebaseCore/Firebase/Core/FIRConfiguration.m  |   46 +
+ .../Firebase/Core/FIRCoreDiagnosticsConnector.m    |   61 +
+ .../FirebaseCore/Firebase/Core/FIRDependency.m     |   44 +
+ .../Firebase/Core/FIRDiagnosticsData.m             |   66 +
+ .../Pods/FirebaseCore/Firebase/Core/FIRErrors.m    |   21 +
+ .../Pods/FirebaseCore/Firebase/Core/FIRLogger.m    |  179 +
+ .../Pods/FirebaseCore/Firebase/Core/FIROptions.m   |  454 +++
+ .../Pods/FirebaseCore/Firebase/Core/FIRVersion.m   |   33 +
+ .../Core/Private/FIRAnalyticsConfiguration.h       |   56 +
+ .../Core/Private/FIRAppAssociationRegistration.h   |   49 +
+ .../Firebase/Core/Private/FIRAppInternal.h         |  162 +
+ .../Firebase/Core/Private/FIRBundleUtil.h          |   53 +
+ .../Firebase/Core/Private/FIRComponent.h           |   91 +
+ .../Firebase/Core/Private/FIRComponentContainer.h  |   44 +
+ .../Core/Private/FIRComponentContainerInternal.h   |   46 +
+ .../Firebase/Core/Private/FIRComponentType.h       |   34 +
+ .../Core/Private/FIRConfigurationInternal.h        |   29 +
+ .../Core/Private/FIRCoreDiagnosticsConnector.h     |   35 +
+ .../Firebase/Core/Private/FIRDependency.h          |   45 +
+ .../Firebase/Core/Private/FIRDiagnosticsData.h     |   35 +
+ .../Firebase/Core/Private/FIRErrorCode.h           |   38 +
+ .../FirebaseCore/Firebase/Core/Private/FIRErrors.h |   24 +
+ .../Firebase/Core/Private/FIRLibrary.h             |   44 +
+ .../FirebaseCore/Firebase/Core/Private/FIRLogger.h |  151 +
+ .../Firebase/Core/Private/FIROptionsInternal.h     |  114 +
+ .../Firebase/Core/Private/FIRVersion.h             |   23 +
+ .../FirebaseCore/Firebase/Core/Public/FIRApp.h     |  127 +
+ .../Firebase/Core/Public/FIRConfiguration.h        |   45 +
+ .../Firebase/Core/Public/FIRLoggerLevel.h          |   38 +
+ .../FirebaseCore/Firebase/Core/Public/FIROptions.h |  123 +
+ .../Firebase/Core/Public/FirebaseCore.h            |   20 +
+ Love Alert/Pods/FirebaseCore/LICENSE               |  202 ++
+ Love Alert/Pods/FirebaseCore/README.md             |  232 ++
+ .../FIRCDLibrary/FIRCoreDiagnostics.m              |  676 ++++
+ .../FIRCoreDiagnosticsDateFileStorage.h            |   47 +
+ .../FIRCoreDiagnosticsDateFileStorage.m            |   64 +
+ .../Protogen/nanopb/firebasecore.nanopb.c          |   60 +
+ .../Protogen/nanopb/firebasecore.nanopb.h          |  193 +
+ Love Alert/Pods/FirebaseCoreDiagnostics/LICENSE    |  202 ++
+ Love Alert/Pods/FirebaseCoreDiagnostics/README.md  |  232 ++
+ .../Public/FIRCoreDiagnosticsData.h                |   61 +
+ .../Public/FIRCoreDiagnosticsInterop.h             |   34 +
+ .../Pods/FirebaseCoreDiagnosticsInterop/LICENSE    |  202 ++
+ .../Pods/FirebaseCoreDiagnosticsInterop/README.md  |  231 ++
+ .../Firebase/InstanceID/FIRIMessageCode.h          |  167 +
+ .../Firebase/InstanceID/FIRInstanceID+Private.m    |   42 +
+ .../Firebase/InstanceID/FIRInstanceID.m            | 1163 ++++++
+ .../Firebase/InstanceID/FIRInstanceIDAPNSInfo.h    |   64 +
+ .../Firebase/InstanceID/FIRInstanceIDAPNSInfo.m    |   79 +
+ .../InstanceID/FIRInstanceIDAuthKeyChain.h         |   95 +
+ .../InstanceID/FIRInstanceIDAuthKeyChain.m         |  216 ++
+ .../Firebase/InstanceID/FIRInstanceIDAuthService.h |   91 +
+ .../Firebase/InstanceID/FIRInstanceIDAuthService.m |  302 ++
+ .../InstanceID/FIRInstanceIDBackupExcludedPlist.h  |   81 +
+ .../InstanceID/FIRInstanceIDBackupExcludedPlist.m  |  117 +
+ .../FIRInstanceIDCheckinPreferences+Internal.h     |   64 +
+ .../FIRInstanceIDCheckinPreferences+Internal.m     |  112 +
+ .../InstanceID/FIRInstanceIDCheckinPreferences.m   |   95 +
+ .../FIRInstanceIDCheckinPreferences_Private.h      |   27 +
+ .../InstanceID/FIRInstanceIDCheckinService.h       |   68 +
+ .../InstanceID/FIRInstanceIDCheckinService.m       |  244 ++
+ .../InstanceID/FIRInstanceIDCheckinStore.h         |  108 +
+ .../InstanceID/FIRInstanceIDCheckinStore.m         |  236 ++
+ .../InstanceID/FIRInstanceIDCombinedHandler.h      |   31 +
+ .../InstanceID/FIRInstanceIDCombinedHandler.m      |   64 +
+ .../Firebase/InstanceID/FIRInstanceIDConstants.h   |   63 +
+ .../Firebase/InstanceID/FIRInstanceIDConstants.m   |   46 +
+ .../Firebase/InstanceID/FIRInstanceIDDefines.h     |   47 +
+ .../Firebase/InstanceID/FIRInstanceIDKeyPair.h     |   78 +
+ .../Firebase/InstanceID/FIRInstanceIDKeyPair.m     |   73 +
+ .../InstanceID/FIRInstanceIDKeyPairStore.h         |   85 +
+ .../InstanceID/FIRInstanceIDKeyPairStore.m         |  525 +++
+ .../InstanceID/FIRInstanceIDKeyPairUtilities.h     |   36 +
+ .../InstanceID/FIRInstanceIDKeyPairUtilities.m     |   83 +
+ .../Firebase/InstanceID/FIRInstanceIDKeychain.h    |   76 +
+ .../Firebase/InstanceID/FIRInstanceIDKeychain.m    |  174 +
+ .../Firebase/InstanceID/FIRInstanceIDLogger.h      |   66 +
+ .../Firebase/InstanceID/FIRInstanceIDLogger.m      |   92 +
+ .../Firebase/InstanceID/FIRInstanceIDStore.h       |  183 +
+ .../Firebase/InstanceID/FIRInstanceIDStore.m       |  242 ++
+ .../InstanceID/FIRInstanceIDStringEncoding.h       |   66 +
+ .../InstanceID/FIRInstanceIDStringEncoding.m       |  208 ++
+ .../InstanceID/FIRInstanceIDTokenDeleteOperation.h |   31 +
+ .../InstanceID/FIRInstanceIDTokenDeleteOperation.m |  120 +
+ .../InstanceID/FIRInstanceIDTokenFetchOperation.h  |   32 +
+ .../InstanceID/FIRInstanceIDTokenFetchOperation.m  |  204 ++
+ .../Firebase/InstanceID/FIRInstanceIDTokenInfo.h   |   92 +
+ .../Firebase/InstanceID/FIRInstanceIDTokenInfo.m   |  212 ++
+ .../InstanceID/FIRInstanceIDTokenManager.h         |  150 +
+ .../InstanceID/FIRInstanceIDTokenManager.m         |  340 ++
+ .../FIRInstanceIDTokenOperation+Private.h          |   67 +
+ .../InstanceID/FIRInstanceIDTokenOperation.h       |   73 +
+ .../InstanceID/FIRInstanceIDTokenOperation.m       |  241 ++
+ .../Firebase/InstanceID/FIRInstanceIDTokenStore.h  |  106 +
+ .../Firebase/InstanceID/FIRInstanceIDTokenStore.m  |  143 +
+ .../InstanceID/FIRInstanceIDURLQueryItem.h         |   39 +
+ .../InstanceID/FIRInstanceIDURLQueryItem.m         |   55 +
+ .../Firebase/InstanceID/FIRInstanceIDUtilities.h   |   85 +
+ .../Firebase/InstanceID/FIRInstanceIDUtilities.m   |  195 +
+ .../InstanceID/FIRInstanceIDVersionUtilities.h     |   35 +
+ .../InstanceID/FIRInstanceIDVersionUtilities.m     |   85 +
+ .../Firebase/InstanceID/NSError+FIRInstanceID.h    |   70 +
+ .../Firebase/InstanceID/NSError+FIRInstanceID.m    |   44 +
+ .../InstanceID/Private/FIRInstanceID+Private.h     |   61 +
+ .../Private/FIRInstanceIDCheckinPreferences.h      |   62 +
+ .../InstanceID/Private/FIRInstanceID_Private.h     |   67 +
+ .../Firebase/InstanceID/Public/FIRInstanceID.h     |  312 ++
+ .../InstanceID/Public/FirebaseInstanceID.h         |   17 +
+ Love Alert/Pods/FirebaseInstanceID/LICENSE         |  202 ++
+ Love Alert/Pods/FirebaseInstanceID/README.md       |  231 ++
+ .../GoogleAppMeasurement                           |  Bin 0 -> 25433784 bytes
+ .../Modules/module.modulemap                       |   11 +
+ .../GDTCORLibrary/GDTCORAssert.m                   |   36 +
+ .../GDTCORLibrary/GDTCORClock.m                    |  164 +
+ .../GDTCORLibrary/GDTCORConsoleLogger.m            |   36 +
+ .../GDTCORLibrary/GDTCORDataFuture.m               |   64 +
+ .../GDTCORLibrary/GDTCOREvent.m                    |  119 +
+ .../GDTCORLibrary/GDTCORLifecycle.m                |  119 +
+ .../GDTCORLibrary/GDTCORPlatform.m                 |  202 ++
+ .../GDTCORLibrary/GDTCORReachability.m             |  112 +
+ .../GDTCORLibrary/GDTCORRegistrar.m                |  139 +
+ .../GDTCORLibrary/GDTCORStorage.m                  |  324 ++
+ .../GDTCORLibrary/GDTCORStoredEvent.m              |   95 +
+ .../GDTCORLibrary/GDTCORTransformer.m              |   89 +
+ .../GDTCORLibrary/GDTCORTransport.m                |   69 +
+ .../GDTCORLibrary/GDTCORUploadCoordinator.m        |  262 ++
+ .../GDTCORLibrary/GDTCORUploadPackage.m            |  154 +
+ .../GDTCORLibrary/Private/GDTCOREvent_Private.h    |   30 +
+ .../GDTCORLibrary/Private/GDTCORReachability.h     |   31 +
+ .../Private/GDTCORReachability_Private.h           |   30 +
+ .../Private/GDTCORRegistrar_Private.h              |   35 +
+ .../GDTCORLibrary/Private/GDTCORStorage.h          |   50 +
+ .../GDTCORLibrary/Private/GDTCORStorage_Private.h  |   47 +
+ .../GDTCORLibrary/Private/GDTCORTransformer.h      |   54 +
+ .../Private/GDTCORTransformer_Private.h            |   33 +
+ .../Private/GDTCORTransport_Private.h              |   39 +
+ .../Private/GDTCORUploadCoordinator.h              |   77 +
+ .../Private/GDTCORUploadPackage_Private.h          |   29 +
+ .../GDTCORLibrary/Public/GDTCORAssert.h            |   91 +
+ .../GDTCORLibrary/Public/GDTCORClock.h             |   57 +
+ .../GDTCORLibrary/Public/GDTCORConsoleLogger.h     |   84 +
+ .../GDTCORLibrary/Public/GDTCORDataFuture.h        |   42 +
+ .../GDTCORLibrary/Public/GDTCOREvent.h             |   94 +
+ .../GDTCORLibrary/Public/GDTCOREventDataObject.h   |   36 +
+ .../GDTCORLibrary/Public/GDTCOREventTransformer.h  |   38 +
+ .../GDTCORLibrary/Public/GDTCORLifecycle.h         |   63 +
+ .../GDTCORLibrary/Public/GDTCORPlatform.h          |   94 +
+ .../GDTCORLibrary/Public/GDTCORPrioritizer.h       |   73 +
+ .../GDTCORLibrary/Public/GDTCORRegistrar.h         |   50 +
+ .../GDTCORLibrary/Public/GDTCORStoredEvent.h       |   58 +
+ .../GDTCORLibrary/Public/GDTCORTargets.h           |   32 +
+ .../GDTCORLibrary/Public/GDTCORTransport.h         |   69 +
+ .../GDTCORLibrary/Public/GDTCORUploadPackage.h     |   80 +
+ .../GDTCORLibrary/Public/GDTCORUploader.h          |   47 +
+ .../GDTCORLibrary/Public/GoogleDataTransport.h     |   30 +
+ Love Alert/Pods/GoogleDataTransport/LICENSE        |  202 ++
+ Love Alert/Pods/GoogleDataTransport/README.md      |  232 ++
+ .../GDTCCTLibrary/GDTCCTNanopbHelpers.m            |  192 +
+ .../GDTCCTLibrary/GDTCCTPrioritizer.m              |  188 +
+ .../GDTCCTLibrary/GDTCCTUploader.m                 |  236 ++
+ .../GDTCCTLibrary/GDTFLLPrioritizer.m              |  188 +
+ .../GDTCCTLibrary/GDTFLLUploader.m                 |  382 ++
+ .../GDTCCTLibrary/Private/GDTCCTNanopbHelpers.h    |  112 +
+ .../GDTCCTLibrary/Private/GDTCCTPrioritizer.h      |   44 +
+ .../GDTCCTLibrary/Private/GDTCCTUploader.h         |   57 +
+ .../GDTCCTLibrary/Private/GDTFLLPrioritizer.h      |   44 +
+ .../GDTCCTLibrary/Private/GDTFLLUploader.h         |   57 +
+ .../GDTCCTLibrary/Protogen/nanopb/cct.nanopb.c     |  128 +
+ .../GDTCCTLibrary/Protogen/nanopb/cct.nanopb.h     |  281 ++
+ .../Pods/GoogleDataTransportCCTSupport/LICENSE     |  202 ++
+ .../Pods/GoogleDataTransportCCTSupport/README.md   |  232 ++
+ .../AppDelegateSwizzler/GULAppDelegateSwizzler.m   | 1034 ++++++
+ .../Internal/GULAppDelegateSwizzler_Private.h      |   55 +
+ .../Private/GULAppDelegateSwizzler.h               |  107 +
+ .../AppDelegateSwizzler/Private/GULApplication.h   |   39 +
+ .../GoogleUtilities/Common/GULLoggerCodes.h        |   39 +
+ .../third_party/GULAppEnvironmentUtil.h            |   46 +
+ .../third_party/GULAppEnvironmentUtil.m            |  262 ++
+ .../GoogleUtilities/Logger/GULLogger.m             |  214 ++
+ .../GoogleUtilities/Logger/Private/GULLogger.h     |  159 +
+ .../GoogleUtilities/Logger/Public/GULLoggerLevel.h |   37 +
+ .../GoogleUtilities/MethodSwizzler/GULSwizzler.m   |  153 +
+ .../Private/GULOriginalIMPConvenienceMacros.h      |  207 ++
+ .../MethodSwizzler/Private/GULSwizzler.h           |   71 +
+ .../GoogleUtilities/NSData+zlib/GULNSData+zlib.h   |   49 +
+ .../GoogleUtilities/NSData+zlib/GULNSData+zlib.m   |  207 ++
+ .../GoogleUtilities/Network/GULMutableDictionary.m |  101 +
+ .../GoogleUtilities/Network/GULNetwork.m           |  389 ++
+ .../GoogleUtilities/Network/GULNetworkConstants.m  |   40 +
+ .../GoogleUtilities/Network/GULNetworkURLSession.m |  759 ++++
+ .../Network/Private/GULMutableDictionary.h         |   46 +
+ .../GoogleUtilities/Network/Private/GULNetwork.h   |   87 +
+ .../Network/Private/GULNetworkConstants.h          |   79 +
+ .../Network/Private/GULNetworkLoggerProtocol.h     |   51 +
+ .../Network/Private/GULNetworkMessageCode.h        |   47 +
+ .../Network/Private/GULNetworkURLSession.h         |   62 +
+ .../Reachability/GULReachabilityChecker+Internal.h |   47 +
+ .../Reachability/GULReachabilityChecker.m          |  240 ++
+ .../Reachability/Private/GULReachabilityChecker.h  |   77 +
+ .../Private/GULReachabilityMessageCode.h           |   29 +
+ .../GoogleUtilities/UserDefaults/GULUserDefaults.m |  213 ++
+ .../UserDefaults/Private/GULUserDefaults.h         |  110 +
+ Love Alert/Pods/GoogleUtilities/LICENSE            |  202 ++
+ Love Alert/Pods/GoogleUtilities/README.md          |  232 ++
+ .../Pods/Headers/Private/Firebase/Firebase.h       |    1 +
+ .../FIRCoreDiagnosticsData.h                       |    1 +
+ .../FIRCoreDiagnosticsInterop.h                    |    1 +
+ Love Alert/Pods/Headers/Public/Firebase/Firebase.h |    1 +
+ .../FIRCoreDiagnosticsData.h                       |    1 +
+ .../FIRCoreDiagnosticsInterop.h                    |    1 +
+ Love Alert/Pods/Manifest.lock                      |  100 +
+ Love Alert/Pods/Pods.xcodeproj/project.pbxproj     | 3717 ++++++++++++++++++++
+ .../henry.xcuserdatad/xcschemes/Firebase.xcscheme  |   60 +
+ .../xcschemes/FirebaseAnalytics.xcscheme           |   60 +
+ .../xcschemes/FirebaseCore.xcscheme                |   60 +
+ .../xcschemes/FirebaseCoreDiagnostics.xcscheme     |   60 +
+ .../FirebaseCoreDiagnosticsInterop.xcscheme        |   60 +
+ .../xcschemes/FirebaseInstanceID.xcscheme          |   60 +
+ .../xcschemes/GoogleAppMeasurement.xcscheme        |   60 +
+ .../xcschemes/GoogleDataTransport.xcscheme         |   60 +
+ .../GoogleDataTransportCCTSupport.xcscheme         |   60 +
+ .../xcschemes/GoogleUtilities.xcscheme             |   60 +
+ .../Pods-Love Alert-Love AlertUITests.xcscheme     |   58 +
+ .../xcschemes/Pods-Love Alert.xcscheme             |   58 +
+ .../xcschemes/Pods-Love AlertTests.xcscheme        |   58 +
+ .../henry.xcuserdatad/xcschemes/nanopb.xcscheme    |   60 +
+ .../xcschemes/xcschememanagement.plist             |  109 +
+ .../Firebase/Firebase.xcconfig                     |   12 +
+ .../FirebaseAnalytics/FirebaseAnalytics.xcconfig   |   12 +
+ .../FirebaseCore/FirebaseCore-Info.plist           |   26 +
+ .../FirebaseCore/FirebaseCore-dummy.m              |    5 +
+ .../FirebaseCore/FirebaseCore-umbrella.h           |   21 +
+ .../FirebaseCore/FirebaseCore.modulemap            |    6 +
+ .../FirebaseCore/FirebaseCore.xcconfig             |   13 +
+ .../FirebaseCoreDiagnostics-Info.plist             |   26 +
+ .../FirebaseCoreDiagnostics-dummy.m                |    5 +
+ .../FirebaseCoreDiagnostics-umbrella.h             |   18 +
+ .../FirebaseCoreDiagnostics.modulemap              |    6 +
+ .../FirebaseCoreDiagnostics.xcconfig               |   14 +
+ .../FirebaseCoreDiagnosticsInterop.xcconfig        |   10 +
+ .../FirebaseInstanceID-Info.plist                  |   26 +
+ .../FirebaseInstanceID/FirebaseInstanceID-dummy.m  |    5 +
+ .../FirebaseInstanceID-umbrella.h                  |   18 +
+ .../FirebaseInstanceID.modulemap                   |    6 +
+ .../FirebaseInstanceID/FirebaseInstanceID.xcconfig |   12 +
+ .../GoogleAppMeasurement.xcconfig                  |   11 +
+ .../GoogleDataTransport-Info.plist                 |   26 +
+ .../GoogleDataTransport-dummy.m                    |    5 +
+ .../GoogleDataTransport-umbrella.h                 |   33 +
+ .../GoogleDataTransport.modulemap                  |    6 +
+ .../GoogleDataTransport.xcconfig                   |   13 +
+ .../GoogleDataTransportCCTSupport-Info.plist       |   26 +
+ .../GoogleDataTransportCCTSupport-dummy.m          |    5 +
+ .../GoogleDataTransportCCTSupport-umbrella.h       |   17 +
+ .../GoogleDataTransportCCTSupport.modulemap        |    6 +
+ .../GoogleDataTransportCCTSupport.xcconfig         |   14 +
+ .../GoogleUtilities/GoogleUtilities-Info.plist     |   26 +
+ .../GoogleUtilities/GoogleUtilities-dummy.m        |    5 +
+ .../GoogleUtilities/GoogleUtilities-prefix.pch     |   12 +
+ .../GoogleUtilities/GoogleUtilities-umbrella.h     |   19 +
+ .../GoogleUtilities/GoogleUtilities.modulemap      |    6 +
+ .../GoogleUtilities/GoogleUtilities.xcconfig       |   10 +
+ .../Pods-Love Alert-Love AlertUITests-Info.plist   |   26 +
+ ...ert-Love AlertUITests-acknowledgements.markdown | 1683 +++++++++
+ ... Alert-Love AlertUITests-acknowledgements.plist | 1775 ++++++++++
+ .../Pods-Love Alert-Love AlertUITests-dummy.m      |    5 +
+ ...UITests-frameworks-Debug-input-files.xcfilelist |    3 +
+ ...ITests-frameworks-Debug-output-files.xcfilelist |    2 +
+ ...Tests-frameworks-Release-input-files.xcfilelist |    3 +
+ ...ests-frameworks-Release-output-files.xcfilelist |    2 +
+ ...Pods-Love Alert-Love AlertUITests-frameworks.sh |  173 +
+ .../Pods-Love Alert-Love AlertUITests-umbrella.h   |   16 +
+ ...ods-Love Alert-Love AlertUITests.debug.xcconfig |   10 +
+ .../Pods-Love Alert-Love AlertUITests.modulemap    |    6 +
+ ...s-Love Alert-Love AlertUITests.release.xcconfig |   10 +
+ .../Pods-Love Alert/Pods-Love Alert-Info.plist     |   26 +
+ .../Pods-Love Alert-acknowledgements.markdown      | 1683 +++++++++
+ .../Pods-Love Alert-acknowledgements.plist         | 1775 ++++++++++
+ .../Pods-Love Alert/Pods-Love Alert-dummy.m        |    5 +
+ ...e Alert-frameworks-Debug-input-files.xcfilelist |    3 +
+ ... Alert-frameworks-Debug-output-files.xcfilelist |    2 +
+ ...Alert-frameworks-Release-input-files.xcfilelist |    3 +
+ ...lert-frameworks-Release-output-files.xcfilelist |    2 +
+ .../Pods-Love Alert/Pods-Love Alert-frameworks.sh  |  173 +
+ .../Pods-Love Alert/Pods-Love Alert-umbrella.h     |   16 +
+ .../Pods-Love Alert/Pods-Love Alert.debug.xcconfig |   10 +
+ .../Pods-Love Alert/Pods-Love Alert.modulemap      |    6 +
+ .../Pods-Love Alert.release.xcconfig               |   10 +
+ .../Pods-Love AlertTests-Info.plist                |   26 +
+ .../Pods-Love AlertTests-acknowledgements.markdown |    3 +
+ .../Pods-Love AlertTests-acknowledgements.plist    |   29 +
+ .../Pods-Love AlertTests-dummy.m                   |    5 +
+ .../Pods-Love AlertTests-umbrella.h                |   16 +
+ .../Pods-Love AlertTests.debug.xcconfig            |    9 +
+ .../Pods-Love AlertTests.modulemap                 |    6 +
+ .../Pods-Love AlertTests.release.xcconfig          |    9 +
+ .../Target Support Files/nanopb/nanopb-Info.plist  |   26 +
+ .../Target Support Files/nanopb/nanopb-dummy.m     |    5 +
+ .../Target Support Files/nanopb/nanopb-prefix.pch  |   12 +
+ .../Target Support Files/nanopb/nanopb-umbrella.h  |   26 +
+ .../Target Support Files/nanopb/nanopb.modulemap   |    6 +
+ .../Target Support Files/nanopb/nanopb.xcconfig    |    9 +
+ Love Alert/Pods/nanopb/LICENSE.txt                 |   20 +
+ Love Alert/Pods/nanopb/README.md                   |   71 +
+ Love Alert/Pods/nanopb/pb.h                        |  593 ++++
+ Love Alert/Pods/nanopb/pb_common.c                 |   97 +
+ Love Alert/Pods/nanopb/pb_common.h                 |   42 +
+ Love Alert/Pods/nanopb/pb_decode.c                 | 1508 ++++++++
+ Love Alert/Pods/nanopb/pb_decode.h                 |  175 +
+ Love Alert/Pods/nanopb/pb_encode.c                 |  869 +++++
+ Love Alert/Pods/nanopb/pb_encode.h                 |  170 +
+ 345 files changed, 45365 insertions(+), 2 deletions(-)
+
+commit cc694ef1f7d67dcd90f98aaad02fb06f03906208
+Author: Henry Chen <hchen113@binghamton.edu>
+Date:   Fri Dec 6 18:08:32 2019 -0500
+
+    Inital commit
+    
+    Copied the app data over from the other repository
+
+ .DS_Store                                          | Bin 0 -> 10244 bytes
+ Assets/app-icon-180.png                            | Bin 0 -> 29109 bytes
+ Assets/heart_button.png                            | Bin 0 -> 50690 bytes
+ Assets/love_alert_logo.png                         | Bin 0 -> 86140 bytes
+ Love Alert/.DS_Store                               | Bin 0 -> 6148 bytes
+ Love Alert/Love Alert.xcodeproj/project.pbxproj    | 612 +++++++++++++++++++++
+ .../project.xcworkspace/contents.xcworkspacedata   |   7 +
+ .../xcshareddata/IDEWorkspaceChecks.plist          |   8 +
+ .../UserInterfaceState.xcuserstate                 | Bin 0 -> 29857 bytes
+ .../xcschemes/xcschememanagement.plist             |  14 +
+ Love Alert/Love Alert/AppDelegate.swift            |  74 +++
+ .../AppIcon.appiconset/Contents.json               |  99 ++++
+ .../AppIcon.appiconset/app-icon-180.png            | Bin 0 -> 29109 bytes
+ .../Love Alert/Assets.xcassets/Contents.json       |   6 +
+ .../heart_button.imageset/Contents.json            |  21 +
+ .../heart_button.imageset/heart_button.png         | Bin 0 -> 50690 bytes
+ .../love_alert_logo.imageset/Contents.json         |  21 +
+ .../love_alert_logo.imageset/love_alert_logo.png   | Bin 0 -> 86140 bytes
+ .../Love Alert/Base.lproj/LaunchScreen.storyboard  |  25 +
+ Love Alert/Love Alert/Base.lproj/Main.storyboard   |  71 +++
+ Love Alert/Love Alert/Info.plist                   |  66 +++
+ .../Love_Alert.xcdatamodeld/.xccurrentversion      |   8 +
+ .../Love_Alert.xcdatamodel/contents                |   4 +
+ Love Alert/Love Alert/SceneDelegate.swift          |  48 ++
+ Love Alert/Love Alert/ViewController.swift         |  33 ++
+ Love Alert/Love AlertTests/Info.plist              |  22 +
+ Love Alert/Love AlertTests/Love_AlertTests.swift   |  34 ++
+ Love Alert/Love AlertUITests/Info.plist            |  22 +
+ .../Love AlertUITests/Love_AlertUITests.swift      |  43 ++
+ README.md                                          |   4 +-
+ 30 files changed, 1241 insertions(+), 1 deletion(-)
+
+commit afebbd0c183f79c2161e0e35103968513d7bba01
+Author: hchen113 <hchen113@binghamton.edu>
+Date:   Fri Dec 6 17:46:40 2019 -0500
+
+    Initial commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
